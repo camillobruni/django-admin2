@@ -8,6 +8,7 @@ sys.path.insert(0, exampleproject_dir)
 
 from django.test.utils import get_runner
 from django.conf import settings
+from django import setup
 
 
 def runtests(tests=('blog', 'files', 'djadmin2')):
@@ -38,6 +39,7 @@ def runtests(tests=('blog', 'files', 'djadmin2')):
 
 
 if __name__ == '__main__':
+    setup()
     if len(sys.argv) > 1:
         tests = sys.argv[1:]
         runtests(tests)
