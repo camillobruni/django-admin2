@@ -17,7 +17,7 @@ The `ModelAdmin2` class is the representation of a model in the admin interface.
 Adding a new view
 =================
 
-To add a new view to a ModelAdmin2, it's need add an attribute that is an
+To add a new view to a ModelAdmin2, add an attribute that is an
 instance of the `views.AdminView`.
 
 The `view.AdminView` takes tree parameters: `url`, `view` and `name`.
@@ -39,7 +39,7 @@ is expected a string that is the name of your view.
 Replacing an existing view
 ==========================
 
-To replacing an existing admin view, it's need add an attribute with the same name that
+To replace an existing admin view, add an attribute with the same name as
 the view that you want replace:
 
 .. code-block:: python
